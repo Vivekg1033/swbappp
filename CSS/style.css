@@ -1,0 +1,117 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #19264C;
+    padding: 10px 0;
+}
+
+.tab-button {
+    color: white;
+    background-color: #0635C6;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    flex-grow: 1;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #0050A0;
+}
+
+.tab-button.active {
+    background-color: #004080;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    transition: opacity 0.3s ease;
+}
+
+.tab-content.active {
+    display: block;
+    opacity: 1;
+}
+
+.emergency-button, .helpline-button {
+    display: inline-block;
+    background-color: #E91137;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.emergency-button:hover, .helpline-button:hover {
+    background-color: #c40c2d;
+}
+
+.emergency-action-button {
+    display: block;
+    background-color: red;
+    color: white;
+    padding: 15px 20px;
+    margin: 20px auto;
+    border: none;
+    width: 80%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.emergency-action-button:hover {
+    background-color: #cc0000;
+}
+
+.image-slider img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.community-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tab-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .emergency-button, .helpline-button, .emergency-action-button {
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tab-button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .emergency-button, .helpline-button, .emergency-action-button {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}
